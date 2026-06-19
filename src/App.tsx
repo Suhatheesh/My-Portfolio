@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import goldAward from './assets/Gold Award .png';
+import specialAward from './assets/Special Award.png';
 
 type Project = {
   title: string
@@ -255,17 +257,17 @@ function App() {
 
             <div className="award-gallery">
               <img
-                src={`${import.meta.env.BASE_URL}images/gold-award.png`}
+                src={goldAward}
                 alt="Gold Award"
                 className="award-image"
-                onClick={() => setSelectedAward(`${import.meta.env.BASE_URL}images/gold-award.png`)}
+                onClick={() => setSelectedAward(goldAward)}
               />
 
               <img
-                src={`${import.meta.env.BASE_URL}images/special-award.png`}
+                src={specialAward}
                 alt="Special Award"
                 className="award-image"
-                onClick={() => setSelectedAward(`${import.meta.env.BASE_URL}images/special-award.png`)}
+                onClick={() => setSelectedAward(specialAward)}
               />
             </div>
           </section>
