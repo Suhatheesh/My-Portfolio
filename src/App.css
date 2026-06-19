@@ -1,0 +1,534 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e5eefc;
+  background: #020617;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(99, 102, 241, 0.1), transparent 26%),
+    linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  color: #e5eefc;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.hero {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 72px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.82rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.hero-text {
+  margin-top: 22px;
+  max-width: 760px;
+  color: #cbd5e1;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.hero-card,
+.card,
+.project-card,
+.experience-card,
+.mini-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.34);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card {
+  border-radius: 28px;
+  padding: 24px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.stat-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.stat-label {
+  display: block;
+  color: #ffffff;
+  font-size: 0.86rem;
+  margin-bottom: 8px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 2fr;
+  gap: 32px;
+  padding: 56px 0;
+}
+
+.sidebar,
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  border-radius: 28px;
+  padding: 24px;
+}
+
+.card h2,
+.section-head h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.card p,
+.section-head p,
+.project-summary,
+.project-note,
+.project-context,
+.project-subtitle,
+.contact-item,
+.simple-list li {
+  color: #cbd5e1;
+}
+
+.skill-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.skill-group h3 {
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #f8fafc;
+}
+
+.tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(14, 165, 233, 0.14);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  font-size: 0.88rem;
+}
+
+.tag-muted {
+  background: rgba(255, 255, 255, 0.06);
+  color: #dbe4f1;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.simple-list {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.simple-list li {
+  margin-bottom: 10px;
+  line-height: 1.75;
+}
+
+.contact-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.contact-item {
+  display: grid;
+  gap: 4px;
+  font-size: 0.95rem;
+}
+
+.contact-label {
+  color: #ffffff;
+  font-size: 0.82rem;
+}
+
+.contact-item a:hover {
+  color: #7dd3fc;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.section-head p {
+  margin: 8px 0 0;
+  color: #ffffff;
+}
+
+.project-list,
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.project-card,
+.experience-card,
+.mini-card {
+  border-radius: 28px;
+  padding: 24px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.55fr 0.85fr;
+  gap: 26px;
+}
+
+.project-main h3,
+.experience-head h3,
+.mini-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.project-subtitle {
+  margin: 6px 0 2px;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.project-context {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.92rem;
+}
+
+.project-summary {
+  margin-top: 16px;
+  line-height: 1.75;
+}
+
+.project-tags {
+  margin-top: 16px;
+}
+
+.project-side {
+  min-width: 0;
+  border-radius: 22px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-preview {
+  min-height: 180px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  background: rgba(2, 6, 23, 0.78);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 0.92rem;
+}
+
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.project-note {
+  margin: 14px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.experience-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.period {
+  color: #ffffff;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #0ea5e9;
+  color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 10px 24px rgba(14, 165, 233, 0.22);
+}
+
+.btn-primary:hover {
+  background: #38bdf8;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  transform: translateY(-1px);
+}
+
+.project-btn {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+
+  .hero-grid,
+  .main-grid,
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-side {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .hero {
+    padding: 56px 0;
+  }
+
+  .card,
+  .hero-card,
+  .project-card,
+  .experience-card,
+  .mini-card {
+    border-radius: 22px;
+    padding: 18px;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .experience-head {
+    flex-direction: column;
+  }
+
+  .period {
+    white-space: normal;
+  }
+}
+
+.hero h1,
+.card h2,
+.section-head h2,
+.project-main h3,
+.experience-head h3,
+.mini-card h3,
+.skill-group h3 {
+  color: #709ee8 !important;
+}
+
+p,
+li,
+a,
+span {
+  text-align: justify;
+}
+
+.card p,
+.hero-text,
+.project-summary,
+.project-note,
+.project-context,
+.project-subtitle,
+.contact-item,
+.simple-list li {
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+}
+
+.btn,
+.tag,
+.stat-card,
+.video-preview {
+  text-align: center;
+}
+
+.award-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.award-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.award-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .award-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 85vh;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
