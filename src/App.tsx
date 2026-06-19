@@ -163,7 +163,7 @@ function App() {
     {
       label: 'CV',
       value: 'Download my CV',
-      href: '/SUKATHEESH SIVARAMAKRISHNAN SW RESUME.pdf',
+      href: 'CV.pdf',
       download: true,
     },
     { label: 'GitHub', value: 'Click to view it', href: 'https://github.com/Suhatheesh', download: false },
