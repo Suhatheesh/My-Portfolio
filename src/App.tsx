@@ -164,7 +164,7 @@ function App() {
       href: '/SUKATHEESH SIVARAMAKRISHNAN SW RESUME.pdf',
       download: true,
     },
-    { label: 'GitHub', value: 'Add your GitHub profile link', href: '#', download: false },
+    { label: 'GitHub', value: 'Click to view it', href: 'https://github.com/Suhatheesh', download: false },
   ]
 
   const skillGroups = Object.entries(skills)
@@ -255,16 +255,17 @@ function App() {
 
             <div className="award-gallery">
               <img
-                src="/Gold Award .png"
+                src={`${import.meta.env.BASE_URL}images/gold-award.png`}
                 alt="Gold Award"
                 className="award-image"
-                onClick={() => setSelectedAward('/Gold Award .png')}
+                onClick={() => setSelectedAward(`${import.meta.env.BASE_URL}images/gold-award.png`)}
               />
+
               <img
-                src="/Special Award.png"
+                src={`${import.meta.env.BASE_URL}images/special-award.png`}
                 alt="Special Award"
                 className="award-image"
-                onClick={() => setSelectedAward('/Special Award.png')}
+                onClick={() => setSelectedAward(`${import.meta.env.BASE_URL}images/special-award.png`)}
               />
             </div>
           </section>
