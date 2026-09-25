@@ -134,6 +134,21 @@ function App() {
         'Followed all food safety, hygiene, and health regulations consistently.',
       ],
     },
+    {
+      title: 'Door-to-Door Sales Representative',
+      company: 'Auckland Grout Co. - Auckland, New Zealand',
+      period: 'Jun 2025 – Sep 2025',
+      points: [
+        'Conducted door-to-door sales and direct customer prospecting across Auckland.',
+        'Approached potential customers confidently and introduced the company’s services in a clear and professional manner.',
+        'Identified customer needs through conversation and explained suitable service options.',
+        'Built rapport quickly with customers from different backgrounds and communication styles.',
+        'Handled customer questions and objections while maintaining a positive and professional sales approach.',
+        'Generated customer interest and potential leads through proactive face-to-face engagement.',
+        'Worked independently in a target-driven environment, developing resilience, confidence and self-motivation.',
+        'Strengthened practical skills in prospecting, persuasion, customer qualification and relationship building.',
+      ],
+    },
   ]
 
   const achievements = [
