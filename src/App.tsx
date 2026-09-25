@@ -120,27 +120,18 @@ function App() {
 
   const otherExperience: Experience[] = [
     {
-      title: 'Food and Beverage Assistant',
+      title: 'Food and Beverage Assistant/ Acting Manager',
       company: 'Spices Galore Limited, T/AS Saravanaa Bhavan - CBD Auckland, New Zealand',
       period: 'Oct 2025 – Present',
       points: [
         'Assisted in food preparation, plating, and takeaway packaging.',
+        'Step into Acting Manager responsibilities when required, supporting staff coordination, customer issue resolution, operational decisions and closing duties.',
         'Served customers efficiently while maintaining hygiene and quality standards.',
         'Greeted customers warmly and ensured a positive dining experience.',
         'Took and managed customer orders using the systems.',
         'Coordinated with kitchen staff to ensure timely and accurate order delivery.',
         'Maintained cleanliness and organization in both service and preparation areas.',
         'Followed all food safety, hygiene, and health regulations consistently.',
-      ],
-    },
-    {
-      title: 'Door to door Sales Representative',
-      company: 'Auckland Grout Co. Grout and Glass restoration, New Zealand',
-      period: 'Jul 2025 – Oct 2025',
-      points: [
-        'Promoted grout and glass restoration services through direct door-to-door sales across Auckland suburbs.',
-        'Built rapport with potential customers, answered service-related queries, and booked consultations.',
-        'Maintained a confident, persuasive communication style to meet daily outreach goals and drive customer interest.',
       ],
     },
   ]
